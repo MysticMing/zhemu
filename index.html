@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#top{
+				background: #16BA9D;
+			    width: 100%;
+			    height: 50%;
+			    position: absolute;
+			    top: 0;
+			    z-index: 10;
+			}
+			
+			#bottom{
+				background: #16BA9D;
+			    width: 100%;
+			    height: 50%;
+			    position: absolute;
+			    bottom: 0;
+			    z-index: 10;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			
+		</div>
+		<div id="bottom">
+			
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			 setTimeout(function () {
+              $('#top').animate({'height': '30%'},400);
+              $('#bottom').animate({'height': '30%'},400);
+            },500)
+		</script>
+	</body>
+</html>
